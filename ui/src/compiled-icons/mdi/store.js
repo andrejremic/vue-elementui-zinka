@@ -1,0 +1,10 @@
+/* eslint-disable */
+import * as icon from 'vue-svgicon'
+icon.register({
+  'mdi/store': {
+    width: 24,
+    height: 24,
+    viewBox: '0 0 24 24',
+    data: '<path pid="0" d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16V4z"/>'
+  }
+})

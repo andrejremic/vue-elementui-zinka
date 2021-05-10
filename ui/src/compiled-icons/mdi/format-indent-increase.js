@@ -1,0 +1,10 @@
+/* eslint-disable */
+import * as icon from 'vue-svgicon'
+icon.register({
+  'mdi/format-indent-increase': {
+    width: 24,
+    height: 24,
+    viewBox: '0 0 24 24',
+    data: '<path pid="0" d="M11 13h10v-2H11m0-2h10V7H11M3 3v2h18V3M11 17h10v-2H11M3 8v8l4-4m-4 9h18v-2H3v2z"/>'
+  }
+})

@@ -1,0 +1,58 @@
+{
+  "name": "zinka",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Vue.js + ElementUI project.",
+  "author": "Andrej Remic <andrej.remic@gmail.com>",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build;rsync --info=progress2 --delete -ra /home/vagrant/ui/dist/static/ /home/vagrant/static/;rsync --info=progress2 -ra /home/vagrant/ui/dist/app.php /home/vagrant/app.php",
+    "lint": "vue-cli-service lint",
+    "build-production-zinka": "vue-cli-service build --mode production-zinka;rsync --progress --delete -r dist/static/ remica@oze:/var/www/zinka/static/;rsync --progress -r dist/app.php remica@oze:/var/www/zinka/app.php",
+    "build-zinkadev": "vue-cli-service build --mode zinkadev;rsync --progress --delete -r dist/static/ remica@oze:/var/www/zinkadev/static/;rsync --progress -r dist/app.php remica@oze:/var/www/zinkadev/app.php",
+    "generate-icons": "vsvg -s ./svg-icons -t ./src/compiled-icons --es6"
+  },
+  "dependencies": {
+    "@femessage/el-form-renderer": "^1.6.0",
+    "@mdi/font": "^3.6.95",
+    "axios": "^0.17.1",
+    "date-fns": "^1.30.1",
+    "element-patch": "^1.1.1",
+    "element-ui": "^2.11.1",
+    "marked": "^0.5.1",
+    "roboto-fontface": "*",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuetify": "^2.1.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@mdi/svg": "^2.1.19",
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-standard": "^3.0.1",
+    "lint-staged": "^7.2.2",
+    "node-sass": "^4.9.2",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-element": "^1.0.0",
+    "vue-cli-plugin-vuetify": "^1.1.0",
+    "vue-svgicon": "^2.1.2",
+    "vue-template-compiler": "^2.6.8",
+    "vuetify-loader": "^1.3.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

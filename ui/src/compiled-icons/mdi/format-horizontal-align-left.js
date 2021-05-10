@@ -1,0 +1,10 @@
+/* eslint-disable */
+import * as icon from 'vue-svgicon'
+icon.register({
+  'mdi/format-horizontal-align-left': {
+    width: 24,
+    height: 24,
+    viewBox: '0 0 24 24',
+    data: '<path pid="0" d="M11 16v-3h10v-2H11V8l-4 4 4 4m-8 4h2V4H3v16z"/>'
+  }
+})

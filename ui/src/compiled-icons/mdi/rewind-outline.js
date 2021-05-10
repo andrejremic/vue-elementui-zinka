@@ -1,0 +1,10 @@
+/* eslint-disable */
+import * as icon from 'vue-svgicon'
+icon.register({
+  'mdi/rewind-outline': {
+    width: 24,
+    height: 24,
+    viewBox: '0 0 24 24',
+    data: '<path pid="0" d="M10 9.9L7 12l3 2.1V9.9m9 0L16 12l3 2.1V9.9M12 6v12l-8.5-6L12 6m9 0v12l-8.5-6L21 6z"/>'
+  }
+})

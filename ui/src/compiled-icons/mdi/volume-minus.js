@@ -1,0 +1,10 @@
+/* eslint-disable */
+import * as icon from 'vue-svgicon'
+icon.register({
+  'mdi/volume-minus': {
+    width: 24,
+    height: 24,
+    viewBox: '0 0 24 24',
+    data: '<path pid="0" d="M3 9h4l5-5v16l-5-5H3V9m11 2h8v2h-8v-2z"/>'
+  }
+})

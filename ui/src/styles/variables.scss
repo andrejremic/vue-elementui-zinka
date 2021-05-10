@@ -1,0 +1,13 @@
+// We import this file to sass loader directly (vue.config.js), so this variables are auto imported to each component
+
+/* Zinka variables */
+$--main-header-height: 30px;
+$--app-header-height: 60px;
+$--ticket-log-add-height: 200px;
+
+/* Element overwrite */
+$--color-primary: teal;
+$--main-padding: 0 20px;
+
+/* Element variables */
+@import "~element-ui/packages/theme-chalk/src/common/var";
